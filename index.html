@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="open.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <script>
+    function openUp() {
+      const $opentop = document.querySelector("#opentop");
+      const $top = document.querySelector("#top");
+      const $front = document.querySelector("#front");
+      const $back = document.querySelector("#back");
+      const $letter = document.querySelector("#letter");
+      const $button = document.querySelector("button");
+
+      $opentop.beginElement();
+      $top.style.zIndex = 2;
+
+      $top.classList.add("animate");
+      $front.classList.add("animate");
+      $back.classList.add("animate");
+      $button.classList.add("animate");
+      $letter.classList.add("animate");
+    }
+  </script>
+  <style>
+    #letter {
+      background-color: #08AEEA;
+      background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+
+    }
+
+    span {
+      font-size: 1em;
+      color: white;
+      font-family: "Noto Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: weight;
+      font-style: normal;
+      font-variation-settings: "wdth" 100;
+
+      }
+    
+  </style>
+</head>
+
+<body>
+  <div class="text">
+    <h1>Hey ! Listen this is for you 💖....</h1>
+  </div>
+  <div id="envelope">
+    <div id="back">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="300" width="300">
+        <polygon points="0,100 300,100 300,300 0,300" style="fill: #4a274a; stroke: none; stroke-width: 0" />
+      </svg>
+    </div>
+    <div id="front">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="300" width="300">
+        <polygon points="0,100 150,200 300,100 300,300 0,300" style="fill: #2abad0; stroke: #ffffff; stroke-width: 3" />
+      </svg>
+    </div>
+    <div id="top">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="300" width="300">
+        <polygon points="0,100 150,200 300,100" style="fill: #2abad0; stroke: #ffffff; stroke-width: 2">
+          <animate id="opentop" attributeName="points" dur="0.5s" fill="freeze" begin="indefinite"
+            from="0,100 150,200 300,100" to="0,100 150,0 300,100" />
+        </polygon>
+      </svg>
+    </div>
+
+    <div id="letter" style="border-radius:20px;">
+      <h1>For Mine </h1>
+      <span id="typed-strings" style="margin-top:40px;">
+        <span>Kuch toh hai jo neend aaye kam</span>
+        <span>Kuch toh hai jo aankhe hai nam</span>
+        <span>Kuch toh hai jo tu keh de toh</span>
+        <span>Haste haste marr jaaye hum</span>
+        <span>Mujhse zyada mere jaisa</span>
+      </span>
+      <span id="typed"></span>
+      <img src="./Designer-new.png" alt="network-Error" srcset="" style="width: 600px; height:250px; margin-top:0%; ">
+    </div>
+    <button onclick="openUp()">Click Here</button>
+  </div>
+  <script type="text/javascript" src="./main.70a66962.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+      type();
+      movingBackgroundImage();
+    });
+  </script>
+</body>
+
+</html>
